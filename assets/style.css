@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#app{
+    background-color: hsl(235, 18%, 26%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#app .container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    width: 65%;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 20px 20px 20px 40px;
+}
+#app .container .mobileImg{
+    display: none;
+}
+#app p{
+    font-size: 16px;
+    color: hsl(234, 29%, 20%);
+}
+#app .container .newsLetter h2{
+    color:  hsl(234, 29%, 20%);
+    font-size: 60px;
+    padding-top: 50px;
+}
+#app .container .newsLetter .title p{
+    width: 90%;
+    padding: 25px 0;
+}
+#app .container .newsLetter ul li{
+    display: flex;
+    column-gap: 15px;
+    padding-bottom: 15px;
+}
+#app .container .newsLetter .form{
+    padding-top: 30px;
+}
+#app .container .newsLetter .form .input-fluid{
+    display: flex;
+    flex-direction: column;
+}
+#app .container .newsLetter .form .input-fluid .validation {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 15px;
+    font-weight: 700;
+}
+#app .container .newsLetter .form .input-fluid .validation .validationText{
+    display: none;
+    color: hsl(1, 100%, 57%);
+}
+#app .container .newsLetter .form .input-fluid label{
+    font-weight: 700;
+    font-size: 15px;
+}
+#app .container .newsLetter .form .input-fluid input{
+    padding-left: 15px;
+    height: 40px;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+#app .container .newsLetter .form .input-fluid input::placeholder{
+    color: hsl(231, 7%, 60%);
+}
+#app .container .newsLetter .form input,button{
+    border: none;
+    outline: none;
+    width: 80%;
+    border-radius: 10px;
+}
+#app .container .newsLetter .form button{
+    height: 40px;
+    font-weight: 700;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    cursor: pointer;
+}
+#app .responseMessage{
+    padding: 40px 20px 40px 50px;
+    border-radius: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+}
+#app .responseMessage h2,p{
+    color: hsl(234, 29%, 20%);
+}
+#app .responseMessage h2{
+    font-size: 40px;
+    width: 60%;
+    font-weight: 700;
+    padding: 20px 0;
+}
+#app .responseMessage p{
+    font-size: 16px;
+    width: 90%;
+    line-height: 25px;
+}
+#app .responseMessage button{
+    cursor: pointer;
+    margin-top: 20px;
+    height: 50px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 10px;
+    font-weight: 700;
+    width: 90%;
+}
+@media only screen and (max-width: 375px) {
+    #app .container{
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        border-radius: 0px;
+    }
+    #app .container .mobileImg{
+        display: block;
+    }
+    #app .container .newsLetter{
+        padding: 0 20px 20px 20px;
+    }
+    #app .container .newsLetter .title h2{
+        font-size: 50px;
+        width: 100%;
+    }
+    #app .container .newsLetter .title p{
+        width: 100%;
+    }
+    #app .container .newsLetter .form input,button{
+        width: 100%;
+    }
+    #app .container .desktopImg{
+        display: none;
+    }
+}
